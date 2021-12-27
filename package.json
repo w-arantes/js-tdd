@@ -4,6 +4,8 @@
   "description": "JS + TDD course library",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,11 @@
     "library"
   ],
   "author": "Wellington Arantes <w.aranteslfc@gmail.com> (https://www.github.com/w-arantes)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "husky": "^7.0.4"
+  }
 }
